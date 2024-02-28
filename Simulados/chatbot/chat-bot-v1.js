@@ -19,4 +19,6 @@ let pergunta = "Minha pergunta é essa"
 let pergunta = pergunta.split(' ')
 
 // Ande pela array de palavras
-  // Veja se a palavra existe no banco X, senão, veja no Y, senão, veja no Z...TEM NO Z? tensione (aumente o matched em 1)
+  // Veja se a palavra existe no banco X, 
+  // senão, veja no Y, 
+  // senão, veja no Z...TEM NO Z? tensione (aumente o matched em 1)
