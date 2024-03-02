@@ -40,11 +40,9 @@ export const palavrasTimeGosta = {
 // Palmeiras tem mundial?
 export const palavrasMundialPalmeiras = {
     probablyWords: [
-    "palmeiras", "tem", "mundial",
-    "mundial", "palmeiras",
-    "mundial",
-    "tem", "copa", "do", "mundo",
-    "campeão", "mundial"
+        "palmeiras", "tem", "mundial?", "mundial",
+        "copa", "do", "mundo",
+        "campeão", "porco", "verdão"
     ],
     matched: 0,
 }
