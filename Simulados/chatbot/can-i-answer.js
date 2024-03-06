@@ -40,20 +40,27 @@ export const palavrasTimeGosta = {
 // Palmeiras tem mundial?
 export const palavrasMundialPalmeiras = {
     probablyWords: [
-        "palmeiras", "tem", "mundial?", "mundial",
-        "copa", "do", "mundo",
-        "campeão", "porco", "verdão"
+    "palmeiras", "tem", "mundial",
+    "mundial", "palmeiras",
+    "mundial",
+    "tem", "copa", "do", "mundo",
+    "campeão", "mundial"
     ],
     matched: 0,
 }
 
-export const papoFurado = {
+export const palavrasPapoFurado = {
     probablyWords: [
-        "palmeiras", "tem", "mundial",
-        "mundial", "palmeiras",
-        "mundial",
-        "tem", "copa", "do", "mundo",
-        "campeão", "mundial"
+        "basquete", "triatlo", "ping-pong",
+        "escola", "sair",
+    ],
+    matched: 0,
+}
+
+export const comoDarUmaBicicleta = {
+    probablyWords: [
+        "bicicleta", "pular", "gol", "de",
+        "como", "dar", "jeito"
     ],
     matched: 0,
 }
@@ -68,20 +75,28 @@ function showAnswer(index) {
             return "Eu gosto do tigre"
         case 3:
             return "O palmeiras não tem mundial, mas tem copa RIO, mas eles falam que tem né, fazer oq"
+        case 4:
+            return "Para se dar uma bicicleta, só dar um mortal chutando"
         default:
             return "Só sei falar de futebol meu amigo, se não for isso, tchau"
     }
 }
 
-export function mostProbablyQuestion() {
+export function mostProbablyQuestion(pergunta) {
+    if (pergunta.includes("basquete")) {
+        return "não falo de basquete"
+    }
     let matches = [
         palavrasFutebol.matched, 
         palavrasRegras.matched, 
         palavrasTimeGosta.matched,
         palavrasMundialPalmeiras.matched, 
-        papoFurado.matched
+        comoDarUmaBicicleta.matched,
+        palavrasPapoFurado.matched,
     ]
-
+    console.log(matches)
+    console.log(Math.max(...matches))
+    console.log(matches.indexOf(Math.max(...matches)))
     // Vê quantas palavras de cada pergunta foi usada
     return showAnswer(matches.indexOf(Math.max(...matches)))
 }

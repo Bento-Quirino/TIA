@@ -1,50 +1,31 @@
-import { palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTimeGosta, mostProbablyQuestion } from './can-i-answer.js'
+import { palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTimeGosta, comoDarUmaBicicleta, palavrasPapoFurado, mostProbablyQuestion } from './can-i-answer.js'
 // O que ele vai poder responder?
 // - O que é futebol?
 // - Quais as regras do futebol?
 // - Que time ele mais gosta?
 // - Palmeiras tem mundial?
-// - Como lidar com perguntas que não são sobre o tema... (LIÇÃO DE CASA)
+// - PAPO FURADO?
 
-
-let pergunta = "O palmeiras palmeira palmeira tem mundial?" // Inicialmente isso é uma string
-console.log(pergunta)
+// Separe a frase em uma array de palavras
+let pergunta = "O que é melhor que futebol ?"
+pergunta = pergunta.toLowerCase()
 pergunta = pergunta.split(' ')
-console.log(pergunta)
+// Tirar da pergunta o "?"
 
-const bancoDeAssuntos = [palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTimeGosta,]
-console.log(bancoDeAssuntos)
-
-pergunta.forEach(palavra => {
-    // é uma pergunta de o que é futebol?
-    for (let i = 0; i < bancoDeAssuntos.length; i++) {
-        if(bancoDeAssuntos[i].probablyWords.indexOf(palavra) !== -1) {// Achou ou não (indice ou -1)
-            bancoDeAssuntos[i].matched++
-        } else {
-            // Tratar isso depois
+const bancos = [
+    palavrasFutebol, palavrasMundialPalmeiras, palavrasRegras, palavrasTimeGosta, comoDarUmaBicicleta, palavrasPapoFurado,
+]
+// ["minha", "pergunta", "é", "essa"]
+for (let i = 0; i < pergunta.length; i++) { // Palavra i
+    for (let j = 0; j < bancos.length; j++) { // Procura a palavra i, no banco j
+        if (bancos[j].probablyWords.indexOf(pergunta[i]) !== -1) {
+            bancos[j].matched++
         }
     }
-})
+}
 
-console.log("------------------------------")
-console.log(bancoDeAssuntos)
-
-
-// console.log(palavrasFutebol)
-// perguntaArray.array.forEach(palavra => {
-//     // Procure nas arrays
-//         // Se achou em alguma, tensione
-//         // Achei na array do palmeirasMundial
-//         // palmeirasMundial.matched++
-
-//         // Se não achou
-// })
-
-// // TENSIONAR ALGUM DOS PONTOS
-// palavrasFutebol.matched = 2
-// palavrasMundialPalmeiras.matched = 5
-
-
-
-// // Verfica quem foi mais tensionado
-// console.log(mostProbablyQuestion())
+console.log(mostProbablyQuestion(pergunta))
+// Ande pela array de palavras
+  // Veja se a palavra existe no banco X, 
+  // senão, veja no Y, 
+  // senão, veja no Z...TEM NO Z? tensione (aumente o matched em 1)
