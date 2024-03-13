@@ -29,3 +29,5 @@ A aplicação deverá **OBRIGATORIAMENTE** utilizar:
 - NÃO PODERRÁ SAIR DURANTE A PROVA PARA ÁGUA OU BANHEIRO
 - PORTAR QUALQUER DISPOSITIVO ELETRÔNICO DURANTE A PROVA (MESMO NÃO SENDO USADO) RESULTARÁ EM ZERO
 - O uso de dispositivos eletrônicos só será liberado nos últimos 20 minutos de prova para entregar a prova no github
+
+- https://docs.google.com/spreadsheets/d/1Qz3x56uPLcdsJD_4auvZcFfBaWyHdKXXhynz3QSqPaU/edit?usp=sharing
