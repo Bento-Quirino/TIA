@@ -52,3 +52,9 @@ A análise deve conter:
 - Correta distinção entre dados qualitativos e quantitativos.
 - Qualidade e clareza das visualizações.
 - Interpretação correta das correlações de Pearson.
+
+## AVISOS
+
+- Explique o que é o target em seu dataset, e o que ele representa.
+- Para os datasets que contenham imagens de rostos, utilize instâncias t4 GPU no google colab
+- Para datasets com imagens de rostos, crie uma função que reconhece rostos utilziando a biblioteca face_rekogntion
