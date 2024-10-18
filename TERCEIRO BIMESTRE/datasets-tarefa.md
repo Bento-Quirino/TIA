@@ -53,8 +53,30 @@ A análise deve conter:
 - Qualidade e clareza das visualizações.
 - Interpretação correta das correlações de Pearson.
 
-## AVISOS
+# Projetos com análise de imagens
 
+Os grupos que utilizam datasets com imagens de rostos devem realizar uma **análise exploratória de dados** e implementar uma funcionalidade de reconhecimento facial. A análise deve incluir:
+
+1. **Descrição do Dataset**:
+   - Introduza o dataset que está sendo analisado.
+   - Descreva o que o dataset representa e suas aplicações.
+   - Explique os tipos de dados e a natureza das imagens.
+   - Dê exemplos de variáveis qualitativas e quantitativas no contexto de imagens.
+
+2. **Estrutura do Dataset**:
+   - Exiba as primeiras instâncias do dataset.
+   - Descreva o tamanho do dataset, incluindo o número de imagens e dimensões das mesmas.
+   - Explique o que cada imagem representa e o significado da variável de destino (target).
+
+3. **Visualização de Imagens**:
+   - Exiba exemplos de imagens contidas no dataset, com legendas explicativas.
+   - Mostre estatísticas, como a distribuição das classes ou alvos nas imagens (se aplicável).
+
+4. **Reconhecimento Facial**:
+   - Implemente uma função de reconhecimento facial utilizando a biblioteca `face_recognition` ou outra adequada.
+   - Descreva como o reconhecimento facial foi configurado e testado.
+
+## AVISOS
 - Explique o que é o target em seu dataset, e o que ele representa.
 - Para os datasets que contenham imagens de rostos, utilize instâncias t4 GPU no google colab
 - Para datasets com imagens de rostos, crie uma função que reconhece rostos utilziando a biblioteca face_rekogntion
