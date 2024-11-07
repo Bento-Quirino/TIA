@@ -16,6 +16,8 @@ Para realizar uma análise exploratória de dados (EDA) completa no dataset esco
 | Alessandra Cristina       | [MPG Dataset](https://archive.ics.uci.edu/ml/datasets/auto+mpg) | Consumo médio de combustível por tipo de veículo          | Consumo de combustível (MPG) |
 | Richard Vinicius   | [Housing Prices Dataset](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/data) | Análise de preços por tamanho, localização e ano de construção | Preço do imóvel            |
 
+[DATASETS E IMPORTAÇÕES](https://www.geeksforgeeks.org/seaborn-datasets-for-data-science/)
+
 ## Instruções
 
 1. **Explicação do Dataset**
